@@ -5,7 +5,7 @@
 
 Name: 		sysfsutils1
 Version: 	1.3.0
-Release: 	%mkrel 2
+Release: 	%mkrel 3
 URL:		http://linux-diag.sourceforge.net/
 Source0: 	http://prdownloads.sourceforge.net/linux-diag/sysfsutils-%{version}.tar.bz2
 License: 	GPL
@@ -31,7 +31,7 @@ This package currently includes:
 %package -n	%{lib_name}
 Summary:	Main library for %{name}
 Group:		System/Libraries
-Provides:	%{lib_name_orig} = %{version}-%{release}
+Provides:	%{lib_name_orig}%{lib_major} = %{version}-%{release}
 
 %description -n	%{lib_name}
 This package contains the library needed to run programs dynamically
@@ -41,7 +41,7 @@ linked with %{name}.
 Summary:	Headers for developing programs that will use %{name}
 Group:		Development/C
 Requires:	%{lib_name} = %{version}
-Provides:	%{lib_name_orig}-devel = %{version}-%{release}
+Provides:	%{lib_name_orig}%{lib_major}-devel = %{version}-%{release}
 
 %description -n	%{lib_name}-devel
 This package contains the headers that programmers will need to develop
@@ -51,7 +51,7 @@ applications which will use %{name}.
 Summary:	Static library for developing programs that will use %{name}
 Group:		Development/C
 Requires:	%{lib_name} = %{version} %{lib_name}-devel = %{version} 
-Provides:	%{lib_name_orig}-static-devel = %{version}-%{release}
+Provides:	%{lib_name_orig}%{lib_major}-static-devel = %{version}-%{release}
 
 %description -n	%{lib_name}-static-devel
 This package contains the static library that programmers will need to develop
