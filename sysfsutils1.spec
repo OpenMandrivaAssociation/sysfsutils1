@@ -10,7 +10,6 @@ URL:		http://linux-diag.sourceforge.net/
 Source0: 	http://prdownloads.sourceforge.net/linux-diag/sysfsutils-%{version}.tar.bz2
 License: 	GPL
 Group: 		System/Kernel and hardware
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Summary: 	Utility suite to enjoy sysfs
 
 %description
