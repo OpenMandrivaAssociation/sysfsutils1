@@ -6,7 +6,7 @@
 Name: 		sysfsutils1
 Version: 	1.3.0
 Release: 	9
-URL:		http://linux-diag.sourceforge.net/
+URL:		https://linux-diag.sourceforge.net/
 Source0: 	http://prdownloads.sourceforge.net/linux-diag/sysfsutils-%{version}.tar.bz2
 License: 	GPL
 Group: 		System/Kernel and hardware
